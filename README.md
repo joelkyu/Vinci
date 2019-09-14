@@ -1,2 +1,2 @@
-# clout-computing
-HTN 2019 Project. Scans a user's laptop cover for stickers to calculate a 'clout count' score.
+# Vinci
+HTN 2019 Project. Utilizes TD Da Vinci API to create a data visualization to empower consumer choice.
