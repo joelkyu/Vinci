@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import json from '1000customers.json';
-=======
 const cust_json = require('./1000customers.json');
->>>>>>> e43a42f194d48f25953100f6c160519a14aa16b2
 const fs = require('fs');
 
 //POST Request to get transaction data filtered (1000 entries)
@@ -34,30 +30,27 @@ var myRequest;
 
 //Point to the array of customers
 
-var customer_list = customers_json.results.customers;
+var customer_list = cust_json.result.customers;
 var customer_id;
 
 //transactions object
-// var transactions = {};
-// transactions.list = [];
+var transactions = {};
+transactions.list = [];
 
 
-<<<<<<< HEAD
-// for(var i = 0; i < 1000; i++){
-//     customer_id = customer_list[i].id;
-//     myRequest = new Request('https://api.td-davinci.com/api/simulants/' + customer_id + '/simulatedtransactions/search', myTransaction);
-//     fetch(myRequest);
-//     transactions.list[i] = myRequest
-// }
-=======
 for(var i = 0; i < 1000; i++){
     customer_id = customer_list[i].id;
     // myRequest = new Request('https://api.td-davinci.com/api/simulants/' + customer_id + '/simulatedtransactions/search', myTransaction);
     // fetch(myRequest);
     transactions.list[i] = 'yee'
 }
->>>>>>> e43a42f194d48f25953100f6c160519a14aa16b2
 
-// var transaction_content = JSON.stringify(transactions)
+var transaction_content = JSON.stringify(transactions)
+fs.writeFile('transactions.json', transaction_content, "utf8", function (err) {
+  if (err) {
+      console.log("An error occured while writing JSON Object to File.");
+      return console.log(err);
+  }
 
-// fs.writeFile('transactions.json', transaction_content, "utf8");
+  console.log("JSON file has been saved.");
+});
