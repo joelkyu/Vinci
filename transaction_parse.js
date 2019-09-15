@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import json from '1000customers.json';
+=======
+const cust_json = require('./1000customers.json');
+>>>>>>> e43a42f194d48f25953100f6c160519a14aa16b2
 const fs = require('fs');
 
 //POST Request to get transaction data filtered (1000 entries)
@@ -21,12 +25,12 @@ var myTransaction = {
 //New request from 
 var myRequest;
 
-fetch(myRequest)
-  .then(response => response.json())
-  .then(json => {
-    // the json variable contains the response from the API
-    console.log(json);
-  });
+// fetch(myRequest)
+//   .then(response => response.json())
+//   .then(json => {
+//     // the json variable contains the response from the API
+//     console.log(json);
+//   });
 
 //Point to the array of customers
 
@@ -38,12 +42,21 @@ var customer_id;
 // transactions.list = [];
 
 
+<<<<<<< HEAD
 // for(var i = 0; i < 1000; i++){
 //     customer_id = customer_list[i].id;
 //     myRequest = new Request('https://api.td-davinci.com/api/simulants/' + customer_id + '/simulatedtransactions/search', myTransaction);
 //     fetch(myRequest);
 //     transactions.list[i] = myRequest
 // }
+=======
+for(var i = 0; i < 1000; i++){
+    customer_id = customer_list[i].id;
+    // myRequest = new Request('https://api.td-davinci.com/api/simulants/' + customer_id + '/simulatedtransactions/search', myTransaction);
+    // fetch(myRequest);
+    transactions.list[i] = 'yee'
+}
+>>>>>>> e43a42f194d48f25953100f6c160519a14aa16b2
 
 // var transaction_content = JSON.stringify(transactions)
 
