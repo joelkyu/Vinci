@@ -11,7 +11,7 @@ var myTransaction = {
         "searchCriteria": [     //Filter by time of transaction
           {
             "key": "originationDateTime",
-            "operation": ">",
+            "operation": ":",
             "value": "2019-09-12"
           }
         ]
@@ -25,12 +25,12 @@ var myRequest;
 //   .then(response => response.json())
 //   .then(json => {
 //     // the json variable contains the response from the API
-//     console.log(json);
+//     console.log(json); 
 //   });
 
 //Point to the array of customers
-var customers_json = JSON.parse(cust_json);
-var customer_list = customers_json.results.customers;
+var customers_json = cust_json;
+var customer_list = customers_json.result.customers;
 var customer_id;
 
 //transactions object
