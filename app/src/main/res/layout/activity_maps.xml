@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -28,5 +29,20 @@
         android:layout_marginTop="661dp"
         android:max="12"
         android:theme="@style/Widget.AppCompat.SeekBar.Discrete" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/map"
+        android:layout_alignEnd="@+id/map"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/map"
+        android:layout_marginBottom="93dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="315dp"
+        android:layout_marginTop="582dp"
+        android:clickable="true"
+        android:src="@drawable/clockicon2" />
 
 </RelativeLayout>
