@@ -25,12 +25,12 @@ var myRequest;
 //   .then(response => response.json())
 //   .then(json => {
 //     // the json variable contains the response from the API
-//     console.log(json);
+//     console.log(json); 
 //   });
 
 //Point to the array of customers
-
-var customer_list = cust_json.result.customers;
+var customers_json = cust_json;
+var customer_list = customers_json.result.customers;
 var customer_id;
 
 //transactions object
