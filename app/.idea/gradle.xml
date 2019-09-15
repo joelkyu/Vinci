@@ -6,7 +6,10 @@
         <compositeConfiguration>
           <compositeBuild compositeDefinitionSource="SCRIPT" />
         </compositeConfiguration>
+<<<<<<< HEAD
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+=======
+>>>>>>> b19e479126af2357a9889a5b508e01b98d387602
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="resolveModulePerSourceSet" value="false" />
         <option name="testRunner" value="PLATFORM" />

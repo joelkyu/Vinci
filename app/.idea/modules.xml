@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/../Vinci.iml" filepath="$PROJECT_DIR$/../Vinci.iml" />
+=======
+>>>>>>> b19e479126af2357a9889a5b508e01b98d387602
       <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" />
     </modules>
   </component>

@@ -1,0 +1,22 @@
+{
+  "name": "vinci",
+  "version": "1.0.0",
+  "description": "HTN 2019 Project. Utilizes TD Da Vinci API to create a data visualization to empower consumer choice.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelkyu/clout-computing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joelkyu/clout-computing/issues"
+  },
+  "homepage": "https://github.com/joelkyu/clout-computing#readme",
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
+}
